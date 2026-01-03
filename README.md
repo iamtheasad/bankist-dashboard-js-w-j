@@ -8,3 +8,4 @@
 - Transfer money to ohter user
 - Loan requst to bank
 - Also you can delete your account
+- Focused on JS Array methods
