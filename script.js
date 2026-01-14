@@ -1010,7 +1010,7 @@ console.log(
   new Intl.NumberFormat(navigator.language).format(num)
 ); */
 
-const ingredients = ['Olives', 'Spinach'];
+/* const ingredients = ['Olives', 'Spinach'];
 
 const timerPizza = setTimeout(
   (ing1, ing2) => console.log(`Your Pizza is ready with ${ing1} and ${ing2}`),
@@ -1018,4 +1018,4 @@ const timerPizza = setTimeout(
   ...ingredients
 );
 
-if (ingredients.includes('Spinach')) clearTimeout(timerPizza);
+if (ingredients.includes('Spinach')) clearTimeout(timerPizza); */
