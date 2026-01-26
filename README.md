@@ -6,42 +6,41 @@ This project simulates basic banking operations like login, money transfer, loan
 
 ---
 
+## 🚀 Live Demo
+
+👉 _https://bankist-dashboard-js-w-j.netlify.app/_
+
+---
+
 ## 🚀 Features
 
 - **User Authentication**
-
   - Login using username and PIN
   - Personalized welcome message after login
 
 - **Account Balance Display**
-
   - Real-time balance calculation using transaction history
   - Localized currency formatting
 
 - **Transaction History (Movements)**
-
   - Displays deposits and withdrawals
   - Shows transaction dates with human-readable format (Today, Yesterday, X days ago)
   - Option to sort transactions ascending/descending
 
 - **Money Transfer**
-
   - Transfer money between accounts
   - Prevents invalid transfers (insufficient balance, same user, invalid amount)
   - Automatically records transfer dates
 
 - **Loan Request**
-
   - Loan approval based on transaction history
   - Simulated loan delay for realism
   - Loan date tracking
 
 - **Account Closure**
-
   - Secure account deletion using username and PIN verification
 
 - **Auto Logout Timer**
-
   - User is automatically logged out after inactivity
   - Timer resets after every valid action
 
