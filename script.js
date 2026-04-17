@@ -167,8 +167,8 @@ const displayMovements = function (acc, sort = false) {
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+          i + 1
+        } ${type}</div>
          <div class="movements__date">${displayDate}</div>
         <div class="movements__value">${formattedMov}</div>
       </div>
@@ -282,7 +282,7 @@ btnLogin.addEventListener('click', function (e) {
 
   // Finding Object of User
   currentAccount = accounts.find(
-    acc => acc.username === inputLoginUsername.value
+    acc => acc.username === inputLoginUsername.value,
   );
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
@@ -307,11 +307,12 @@ btnLogin.addEventListener('click', function (e) {
       year: 'numeric',
       weekday: 'long',
     };
+    // Get the browser language
     // const locale = navigator.language;
 
     labelDate.textContent = Intl.DateTimeFormat(
       currentAccount.locale,
-      options
+      options,
     ).format(now);
 
     // const now = new Date();
@@ -338,7 +339,7 @@ btnTransfer.addEventListener('click', function (e) {
 
   const amount = Number(inputTransferAmount.value);
   const receiverAcc = accounts.find(
-    acc => acc.username === inputTransferTo.value
+    acc => acc.username === inputTransferTo.value,
   );
 
   inputTransferAmount.value = inputTransferTo.value = '';
@@ -405,7 +406,7 @@ btnClose.addEventListener('click', function (e) {
     Number(inputClosePin.value) === currentAccount.pin
   ) {
     const index = accounts.findIndex(
-      acc => acc.username === currentAccount.username
+      acc => acc.username === currentAccount.username,
     );
 
     // Delete account
